@@ -51,10 +51,12 @@
 
 .item20 {
 
-    background-color: lightgreen;
+    background-color: yellowgreen;
     border: 2px dotted blue;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    /*grid-row-start: 2;*/
+    /*grid-row-end: 4;*/
+    /* same effect as above, but with the short hand keyword*/
+    grid-row: 2 / 4;
 }
 
 .item30 {
