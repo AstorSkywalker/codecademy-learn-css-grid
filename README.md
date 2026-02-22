@@ -56,6 +56,28 @@ With `grid-template-columns: 100px 100px 100px`, the grid creates:
 - `style.css` — CSS Grid configuration and item styling
 - `README.md` — This file
 
+## Grid Row Properties
+
+This project demonstrates row positioning using the following related properties:
+
+- `grid-row-start`: the grid line where the item begins. Can be a number, a named line, or the keyword `span` (e.g. `grid-row-start: 2;` or `grid-row-start: span 2;`).
+- `grid-row-end`: the grid line where the item ends. Typically used together with `grid-row-start` (e.g. `grid-row-end: 4;`).
+- `grid-row`: shorthand for `grid-row-start / grid-row-end`. Examples:
+	- `grid-row: 1 / 3;` — start at line 1, end at line 3 (spans two rows)
+	- `grid-row: 2 / span 2;` — start at line 2 and span 2 rows
+
+Project examples:
+
+- `.item4` in `style.css` uses:
+	- `grid-row-start: 1;`
+	- `grid-row-end: 3;`
+	This places the item starting on row line 1 and ending on row line 3, so it occupies both defined rows.
+
+- In the blue example grid (`.grid10`), `.item20` demonstrates the shorthand:
+	- `grid-row: 2 / 4;` — shorthand that places the item from row line 2 to row line 4 (spanning two row tracks).
+
+When using these properties, keep in mind that grid line numbers start at 1 at the start edge of the grid and increase across rows; using `span` makes it easier to specify how many rows an item should cover without calculating the end line explicitly.
+
 ## Next Steps
 
 Try experimenting with:
