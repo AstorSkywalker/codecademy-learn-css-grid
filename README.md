@@ -78,6 +78,17 @@ Project examples:
 
 When using these properties, keep in mind that grid line numbers start at 1 at the start edge of the grid and increase across rows; using `span` makes it easier to specify how many rows an item should cover without calculating the end line explicitly.
 
+### Important note: grid lines vs rows
+
+`grid-row-start` and `grid-row-end` refer to *grid lines* (the boundaries between rows), not the rows themselves. Grid lines are numbered from 1 at the start edge of the grid. For a grid with two row tracks, the top edge is line 1, the middle line between rows is line 2, and the bottom edge is line 3. So to place an item in the first row you would use `grid-row: 1 / 2` (start at line 1, end at line 2).
+
+Using `span` is often more intuitive because it expresses how many row tracks an item should cover without calculating the ending line. Examples:
+
+- `grid-row: 1 / span 2;` — start at line 1 and span two rows (equivalent to `1 / 3` when there are at least two rows)
+- `grid-row-start: 2; grid-row-end: span 2;` — start on line 2 and cover the next two tracks
+
+`span` is especially handy when items should grow or when you don't want to recalculate line numbers after changing the grid definition.
+
 ## Next Steps
 
 Try experimenting with:
