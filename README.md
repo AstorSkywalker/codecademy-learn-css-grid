@@ -111,6 +111,21 @@ Using `span` is often more intuitive because it expresses how many row tracks an
 
 `span` is especially handy when items should grow or when you don't want to recalculate line numbers after changing the grid definition.
 
+## Grid Column Properties
+
+This project now also includes notes and examples for column positioning using these properties:
+
+- `grid-column-start`: the grid line where the item begins (number, name, or `span`). Example: `grid-column-start: 2;`.
+- `grid-column-end`: the grid line where the item ends. Example: `grid-column-end: 4;`.
+- `grid-column`: shorthand for `grid-column-start / grid-column-end`. Examples:
+	- `grid-column: 1 / 3;` — starts at column line 1 and ends at column line 3 (spans two column tracks).
+	- `grid-column: 2 / span 2;` — starts at line 2 and spans two columns.
+
+Notes:
+- `grid-column-start` and `grid-column-end` target grid *lines* (edges), not column tracks. Lines are numbered starting at 1 from the grid's start edge.
+- Using `span` lets you declare how many column tracks an item should cover without calculating the end line explicitly (e.g. `grid-column: 1 / span 2;`).
+- The shorthand `grid-column` is often more convenient for concise positioning.
+
 ## Next Steps
 
 Try experimenting with:
