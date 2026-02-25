@@ -98,3 +98,18 @@
     border: 2px dotted green;
     grid-column: 2 / span 2; /* same effect as above, but with the short hand keyword*/
 }
+
+.item31 {
+    background-color: lightpink;
+    border: 2px dotted green;
+}
+
+.item41 {
+    background-color: lightyellow;
+    border: 2px dotted green;
+}
+
+.item51 {
+    background-color: lightgray;
+    border: 2px dotted green;
+}
