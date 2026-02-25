@@ -80,7 +80,7 @@
     display: grid;
     border: 2px solid green;
     width: 500px;
-    height: 300px;
+    height: 500px;
     grid-template-columns: repeat(5, 100px); 
     margin: 20px 0;   
 }
@@ -96,5 +96,5 @@
 .item21 {
     background-color: yellowgreen;
     border: 2px dotted green;
-    grid-column: 2 / span 2; /* same effect as above, but with the short hand keyword*/
+    grid-column: 3 / span 2; /* same effect as above, but with the short hand keyword*/
 }
