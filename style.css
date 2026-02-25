@@ -73,3 +73,28 @@
     background-color: lightgray;
     border: 2px dotted blue;
 }
+
+
+/* New grid for the new items. grid-column-start and grid-column-end and grid-column example */
+.grid11 {
+    display: grid;
+    border: 2px solid green;
+    width: 500px;
+    height: 300px;
+    grid-template-columns: repeat(5, 100px); 
+    margin: 20px 0;   
+}
+
+/* grid-column-start and grid-column-end example */
+.item11 {
+    background-color: lightblue;
+    border: 2px dotted green;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item21 {
+    background-color: yellowgreen;
+    border: 2px dotted green;
+    grid-column: 2 / span 2; /* same effect as above, but with the short hand keyword*/
+}
