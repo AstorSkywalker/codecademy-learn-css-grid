@@ -2,6 +2,8 @@
 
 A learning project for understanding **CSS Grid**, a powerful layout tool for creating responsive two-dimensional grid layouts.
 
+> **Note:** This repository contains the Codecademy Front-End Developer course exercise for the "Learn CSS Grid Essentials" module.
+
 ## Links
 
 - **Repository:** https://github.com/AstorSkywalker/codecademy-learn-css-grid
