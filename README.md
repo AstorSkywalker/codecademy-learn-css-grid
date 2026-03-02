@@ -135,3 +135,12 @@ Try experimenting with:
 - `grid-gap` or `gap` — add spacing between grid items
 - `grid-auto-flow` — change how items fill the grid (row vs. column)
 - `grid-column` / `grid-row` — make items span multiple cells
+ - `grid-column` / `grid-row` — make items span multiple cells
+
+---
+
+File metadata
+
+- Name: Nelson A. Nelson
+- Last Updated: March 1, 2026
+- Version: 1.0
